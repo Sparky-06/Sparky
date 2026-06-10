@@ -1,0 +1,242 @@
+2026-05-14 13:07:54 | INFO     | __main__:<module>:62 - Initializing voice assistant...
+2026-05-14 13:07:54 | DEBUG    | __main__:test_logging:54 - Debugging details for your inevitable future suffering.
+2026-05-14 13:07:54 | INFO     | __main__:test_logging:55 - Assistant started successfully.
+2026-05-14 13:07:54 | WARNING  | __main__:test_logging:56 - Something mildly suspicious happened.
+2026-05-14 13:07:54 | ERROR    | __main__:test_logging:57 - Something broke because computers enjoy chaos.
+2026-05-14 13:07:54 | CRITICAL | __main__:test_logging:58 - Catastrophic failure. Humanity had a good run.
+2026-05-14 13:09:44 | INFO     | __main__:<module>:62 - Initializing voice assistant...
+2026-05-14 13:09:44 | DEBUG    | __main__:test_logging:54 - Debugging details for your inevitable future suffering.
+2026-05-14 13:09:44 | INFO     | __main__:test_logging:55 - Assistant started successfully.
+2026-05-14 13:09:44 | WARNING  | __main__:test_logging:56 - Something mildly suspicious happened.
+2026-05-14 13:09:44 | ERROR    | __main__:test_logging:57 - Something broke because computers enjoy chaos.
+2026-05-14 13:09:44 | CRITICAL | __main__:test_logging:58 - Catastrophic failure. Humanity had a good run.
+
+2026-05-14 13:19:04 | INFO     | __main__:main:63 - Acess : USER ACCESSES SPARKY
+2026-05-14 13:19:08 | INFO     | __main__:main:70 - exit : USER EXIT SPARKY
+
+2026-05-14 13:19:24 | INFO     | __main__:main:63 - Acess : USER ACCESSES SPARKY
+2026-05-14 13:19:28 | INFO     | __main__:main:70 - exit : USER EXIT SPARKY
+
+2026-05-14 14:18:52 | INFO     | __main__:main:63 - Acess : USER ACCESSES SPARKY
+2026-05-14 14:18:56 | INFO     | __main__:main:70 - exit : USER EXIT SPARKY
+
+2026-05-14 14:19:34 | INFO     | __main__:main:61 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-14 14:19:43 | ERROR    | brain:process_command:119 - Error : Could not find apt command from "hello" - Command not recognised
+2026-05-14 14:19:51 | ERROR    | brain:process_command:119 - Error : Could not find apt command from "thanks, at least.  seriously." - Command not recognised
+2026-05-14 14:19:58 | INFO     | __main__:main:73 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-05-14 15:14:32 | WARNING  | __main__:main:63 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-14 15:14:39 | INFO     | __main__:main:72 - Transcript : Input Transcript -  open my gmail
+2026-05-14 15:14:39 | INFO     | brain:process_command:110 - Executing command : gmail
+2026-05-14 15:14:39 | INFO     | commands:safe_web_open:43 - Success : {url} - Successful url access
+2026-05-14 15:15:58 | INFO     | __main__:main:72 - Transcript : Input Transcript -  what is the cricket score?
+2026-05-14 15:15:58 | INFO     | brain:process_command:110 - Executing command : cricket score
+2026-05-14 15:16:00 | INFO     | commands:safe_web_open:43 - Success : {url} - Successful url access
+2026-05-14 15:16:19 | INFO     | __main__:main:72 - Transcript : Input Transcript -  exit
+2026-05-14 15:16:19 | WARNING  | __main__:main:75 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-05-14 15:16:40 | WARNING  | __main__:main:63 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-14 15:16:45 | INFO     | __main__:main:72 - Transcript : Input Transcript - " open my diva"
+2026-05-14 15:16:45 | ERROR    | brain:process_command:119 - Error : Could not find apt command from "open my diva" - Command not recognised
+2026-05-14 15:16:52 | INFO     | __main__:main:72 - Transcript : Input Transcript - " open my gmail"
+2026-05-14 15:16:52 | INFO     | brain:process_command:110 - Executing command : gmail
+2026-05-14 15:16:53 | INFO     | commands:safe_web_open:43 - Success : https://mail.google.com - Successful url access
+2026-05-14 15:17:07 | INFO     | __main__:main:72 - Transcript : Input Transcript - " don't my volume down"
+2026-05-14 15:17:07 | INFO     | brain:process_command:110 - Executing command : volume down
+2026-05-14 15:17:09 | INFO     | commands:safe_run:28 - Success : "['pactl', 'set-sink-volume', '@DEFAULT_SINK@', '-10%']" Successful command execution
+2026-05-14 15:17:21 | INFO     | __main__:main:72 - Transcript : Input Transcript - " increase volume up"
+2026-05-14 15:17:21 | INFO     | brain:process_command:110 - Executing command : volume up
+2026-05-14 15:17:22 | INFO     | commands:safe_run:28 - Success : "['pactl', 'set-sink-volume', '@DEFAULT_SINK@', '+10%']" Successful command execution
+2026-05-14 15:17:39 | INFO     | __main__:main:72 - Transcript : Input Transcript - " what is the grid score?"
+2026-05-14 15:17:39 | ERROR    | brain:process_command:119 - Error : Could not find apt command from "what is the grid score?" - Command not recognised
+2026-05-14 15:17:45 | INFO     | __main__:main:72 - Transcript : Input Transcript - " what is the cricket score?"
+2026-05-14 15:17:45 | INFO     | brain:process_command:110 - Executing command : cricket score
+2026-05-14 15:17:47 | INFO     | commands:safe_web_open:43 - Success : https://www.google.com/search?q=Cricket%20Score - Successful url access
+2026-05-14 15:17:53 | INFO     | __main__:main:72 - Transcript : Input Transcript - " exit, please."
+2026-05-14 15:17:53 | WARNING  | __main__:main:75 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-05-15 00:39:01 | WARNING  | __main__:main:111 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-15 00:39:09 | INFO     | __main__:listen:86 - listen : Speech captured successfully
+2026-05-15 00:39:11 | INFO     | __main__:main:120 - Transcript : Input Transcript - " exit."
+2026-05-15 00:39:11 | WARNING  | __main__:main:123 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-05-15 00:53:00 | WARNING  | __main__:main:115 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-15 00:53:14 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9683651924133301
+2026-05-15 00:53:19 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:53:19 | INFO     | __main__:main:124 - Transcript : Input Transcript - " open-spotify."
+2026-05-15 00:53:19 | INFO     | brain:process_command:110 - Execute : Executing command - spotify
+2026-05-15 00:53:19 | INFO     | commands:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-05-15 00:53:19 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9767318964004517
+2026-05-15 00:53:25 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:53:26 | INFO     | __main__:main:124 - Transcript : Input Transcript - " security for the high."
+2026-05-15 00:53:26 | ERROR    | brain:process_command:119 - Error : Could not find apt command from "security for the high." - Command not recognised
+2026-05-15 00:53:28 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9981104135513306
+2026-05-15 00:54:11 | WARNING  | __main__:main:115 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-15 00:54:16 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9977439641952515
+2026-05-15 00:54:21 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:54:22 | INFO     | __main__:main:124 - Transcript : Input Transcript - " opens 45."
+2026-05-15 00:54:22 | ERROR    | brain:process_command:119 - Error : Could not find apt command from "opens 45." - Command not recognised
+2026-05-15 00:54:22 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9967954158782959
+2026-05-15 00:54:28 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:54:28 | INFO     | __main__:main:124 - Transcript : Input Transcript - " it's not direct of the ice.  open-spot-a-fer."
+2026-05-15 00:54:28 | ERROR    | brain:process_command:119 - Error : Could not find apt command from "it's not direct of the ice.  open-spot-a-fer." - Command not recognised
+2026-05-15 00:54:30 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9986724853515625
+2026-05-15 00:54:35 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:54:35 | INFO     | __main__:main:124 - Transcript : Input Transcript - " open-spotify."
+2026-05-15 00:54:35 | INFO     | brain:process_command:110 - Execute : Executing command - spotify
+2026-05-15 00:54:37 | INFO     | commands:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-05-15 00:54:37 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9957355260848999
+2026-05-15 00:54:42 | WARNING  | __main__:listen:75 - listen : No speech detected
+2026-05-15 00:54:43 | INFO     | __main__:main:124 - Transcript : Input Transcript - " open-spotify."
+2026-05-15 00:54:43 | INFO     | brain:process_command:110 - Execute : Executing command - spotify
+2026-05-15 00:54:44 | INFO     | commands:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-05-15 00:54:44 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9974249005317688
+2026-05-15 00:54:49 | WARNING  | __main__:listen:75 - listen : No speech detected
+2026-05-15 00:54:50 | INFO     | __main__:main:124 - Transcript : Input Transcript - " open-spotify."
+2026-05-15 00:54:50 | INFO     | brain:process_command:110 - Execute : Executing command - spotify
+2026-05-15 00:54:52 | INFO     | commands:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-05-15 00:54:52 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.985724925994873
+2026-05-15 00:54:57 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:54:57 | INFO     | __main__:main:124 - Transcript : Input Transcript - " thank you."
+2026-05-15 00:54:57 | ERROR    | brain:process_command:119 - Error : Could not find apt command from "thank you." - Command not recognised
+2026-05-15 00:54:59 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9652228355407715
+2026-05-15 00:55:04 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:55:04 | INFO     | __main__:main:124 - Transcript : Input Transcript - " exit"
+2026-05-15 00:55:04 | WARNING  | __main__:main:127 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-05-15 00:58:04 | WARNING  | __main__:main:115 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-15 00:58:07 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.720375657081604
+2026-05-15 00:58:13 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:58:13 | INFO     | __main__:main:124 - Transcript : Input Transcript - " search for a cricket score in google"
+2026-05-15 00:58:13 | INFO     | __main__:main:137 - Search : Google search for for a cricket score in google on brave/browser
+2026-05-15 00:58:36 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8579091429710388
+2026-05-15 00:58:42 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:58:42 | INFO     | __main__:main:124 - Transcript : Input Transcript - " open settings."
+2026-05-15 00:58:42 | INFO     | brain:process_command:110 - Execute : Executing command - settings
+2026-05-15 00:58:44 | INFO     | commands:safe_popen:15 - Success : "['gnome-control-center']"successful command execution
+2026-05-15 00:58:44 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9602346420288086
+2026-05-15 00:58:50 | WARNING  | __main__:listen:75 - listen : No speech detected
+2026-05-15 00:58:51 | INFO     | __main__:main:124 - Transcript : Input Transcript - " open settings."
+2026-05-15 00:58:51 | INFO     | brain:process_command:110 - Execute : Executing command - settings
+2026-05-15 00:58:52 | INFO     | commands:safe_popen:15 - Success : "['gnome-control-center']"successful command execution
+2026-05-15 00:58:53 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.895614743232727
+2026-05-15 00:58:59 | WARNING  | __main__:listen:75 - listen : No speech detected
+2026-05-15 00:58:59 | INFO     | __main__:main:124 - Transcript : Input Transcript - " open settings."
+2026-05-15 00:58:59 | INFO     | brain:process_command:110 - Execute : Executing command - settings
+2026-05-15 00:59:01 | INFO     | commands:safe_popen:15 - Success : "['gnome-control-center']"successful command execution
+2026-05-15 00:59:13 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8725453615188599
+2026-05-15 00:59:19 | INFO     | __main__:listen:90 - listen : Speech captured successfully
+2026-05-15 00:59:20 | INFO     | __main__:main:124 - Transcript : Input Transcript - " exit quit"
+2026-05-15 00:59:20 | WARNING  | __main__:main:127 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-05-23 03:08:23 | WARNING  | __main__:main:130 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-23 03:08:30 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.7332059144973755
+2026-05-23 03:08:39 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:08:40 | INFO     | __main__:main:147 - Transcript : Input Transcript - "you need to contract the firm."
+2026-05-23 03:09:07 | WARNING  | __main__:main:130 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-23 03:09:15 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.7486211657524109
+2026-05-23 03:09:24 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:09:25 | INFO     | __main__:main:147 - Transcript : Input Transcript - "you're new to the concept of her."
+2026-05-23 03:09:29 | INFO     | __main__:main:158 - LLM : Goes into LLM for intent and action
+2026-05-23 03:09:54 | WARNING  | __main__:main:130 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-23 03:10:00 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8229117393493652
+2026-05-23 03:10:09 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:10:09 | INFO     | __main__:main:147 - Transcript : Input Transcript - "it means it's quite a fair."
+2026-05-23 03:10:09 | WARNING  | __main__:main:150 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-05-23 03:10:34 | WARNING  | __main__:main:130 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-23 03:10:38 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9739125967025757
+2026-05-23 03:10:47 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:10:48 | INFO     | __main__:main:147 - Transcript : Input Transcript - "and play music on spotify."
+2026-05-23 03:10:52 | ERROR    | actions:safe_run:34 - Error : "['playerctl', 'play-pause']" Command failed
+2026-05-23 03:10:56 | INFO     | __main__:main:158 - LLM : Goes into LLM for intent and action
+2026-05-23 03:10:56 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.7057738304138184
+2026-05-23 03:11:05 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:11:06 | INFO     | __main__:main:147 - Transcript : Input Transcript - "bye!"
+2026-05-23 03:11:09 | INFO     | __main__:main:158 - LLM : Goes into LLM for intent and action
+2026-05-23 03:11:10 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.5506390333175659
+2026-05-23 03:11:19 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:11:19 | INFO     | __main__:main:147 - Transcript : Input Transcript - "thanks sir."
+2026-05-23 03:11:22 | INFO     | __main__:main:158 - LLM : Goes into LLM for intent and action
+2026-05-23 03:11:26 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.5266690254211426
+2026-05-23 03:11:35 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:11:35 | INFO     | __main__:main:147 - Transcript : Input Transcript - "thanks, sir."
+2026-05-23 03:15:28 | WARNING  | __main__:main:130 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-23 03:15:31 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9483353495597839
+2026-05-23 03:15:39 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:15:40 | INFO     | __main__:main:147 - Transcript : Input Transcript - "play music on spotify."
+2026-05-23 03:15:40 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-05-23 03:15:45 | INFO     | actions:safe_run:28 - Success : "['playerctl', 'play-pause']" Successful command execution
+2026-05-23 03:15:49 | INFO     | actions:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-05-23 03:16:10 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9681475162506104
+2026-05-23 03:16:18 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:16:19 | INFO     | __main__:main:147 - Transcript : Input Transcript - "play in the song."
+2026-05-23 03:16:19 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-05-23 03:16:23 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.6878628134727478
+2026-05-23 03:16:31 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:16:32 | INFO     | __main__:main:147 - Transcript : Input Transcript - "play the song."
+2026-05-23 03:16:32 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-05-23 03:16:35 | INFO     | actions:safe_run:28 - Success : "['playerctl', 'play-pause']" Successful command execution
+2026-05-23 03:16:39 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.57720547914505
+2026-05-23 03:16:47 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:16:48 | INFO     | __main__:main:147 - Transcript : Input Transcript - "i don't need this play the song"
+2026-05-23 03:16:48 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-05-23 03:17:01 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9723869562149048
+2026-05-23 03:17:09 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:17:10 | INFO     | __main__:main:147 - Transcript : Input Transcript - "in the song."
+2026-05-23 03:17:10 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-05-23 03:17:13 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.5336173176765442
+2026-05-23 03:17:22 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:17:22 | INFO     | __main__:main:147 - Transcript : Input Transcript - "the song"
+2026-05-23 03:17:22 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-05-23 03:17:26 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.7219391465187073
+2026-05-23 03:17:34 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:17:35 | INFO     | __main__:main:147 - Transcript : Input Transcript - "plays song"
+2026-05-23 03:17:35 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-05-23 03:17:39 | INFO     | actions:safe_run:28 - Success : "['playerctl', 'play-pause']" Successful command execution
+2026-05-23 03:17:44 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9589297771453857
+2026-05-23 03:17:52 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:17:54 | INFO     | __main__:main:147 - Transcript : Input Transcript - "quick!"
+2026-05-23 03:17:54 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-05-23 03:17:58 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8761091232299805
+2026-05-23 03:18:06 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:18:07 | INFO     | __main__:main:147 - Transcript : Input Transcript - "thanks."
+2026-05-23 03:18:07 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-05-23 03:18:10 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9235748052597046
+2026-05-23 03:18:18 | INFO     | __main__:listen:95 - listen : Speech captured successfully
+2026-05-23 03:18:19 | INFO     | __main__:main:147 - Transcript : Input Transcript - "exit."
+2026-05-23 03:18:19 | WARNING  | __main__:main:150 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-05-23 03:27:33 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-23 03:27:46 | INFO     | wake:wake_word_listener:35 - Wake word detected! Score: 0.8355836868286133
+2026-05-23 03:27:54 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-05-23 03:27:55 | INFO     | __main__:main:145 - Transcript : Input Transcript - "let's play my song on spotify."
+2026-05-23 03:27:55 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-05-23 03:28:36 | INFO     | actions:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-05-23 03:28:36 | INFO     | actions:safe_run:28 - Success : "['playerctl', 'play-pause']" Successful command execution
+2026-05-23 03:28:41 | INFO     | llm:execute_actions:398 - LLM OUTPUT : Opening Spotify and playing your song.
+2026-05-23 03:28:54 | INFO     | wake:wake_word_listener:35 - Wake word detected! Score: 0.8142180442810059
+2026-05-23 03:29:02 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-05-23 03:29:03 | INFO     | __main__:main:145 - Transcript : Input Transcript - "exit"
+2026-05-23 03:29:03 | WARNING  | __main__:main:148 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-05-23 03:30:16 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-05-23 03:30:36 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9174492359161377
+2026-05-23 03:30:44 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-05-23 03:30:45 | INFO     | __main__:main:145 - Transcript : Input Transcript - "what is the cricket score?"
+2026-05-23 03:30:45 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-05-23 03:30:49 | INFO     | actions:safe_web_open:43 - Success : https://www.google.com/search?q=Cricket%20Score - Successful url access
+2026-05-23 03:30:53 | INFO     | llm:execute_actions:398 - LLM OUTPUT : Checking the cricket score.
+2026-05-23 03:30:55 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9786674380302429
+2026-05-23 03:31:04 | WARNING  | __main__:listen:78 - listen : No speech detected
+2026-05-23 03:31:07 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8505800366401672
+2026-05-23 03:31:16 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-05-23 03:31:16 | INFO     | __main__:main:145 - Transcript : Input Transcript - "thank you, buddy."
+2026-05-23 03:31:16 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-05-23 03:31:21 | INFO     | llm:execute_actions:398 - LLM OUTPUT : You're welcome!
+2026-05-23 03:31:24 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8591170310974121
+2026-05-23 03:31:32 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-05-23 03:31:33 | INFO     | __main__:main:145 - Transcript : Input Transcript - "bye bye."
+2026-05-23 03:31:33 | WARNING  | __main__:main:148 - exit : USER EXIT SPARKY - Sessions ends!!
+
+

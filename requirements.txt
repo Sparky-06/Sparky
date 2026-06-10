@@ -1,0 +1,11 @@
+edge_tts==7.2.8
+faster_whisper==1.2.1
+loguru==0.7.3
+numpy==2.4.6
+openwakeword==0.4.0
+rapidfuzz==3.14.5
+Requests==2.34.2
+scipy==1.17.1
+silero_vad==6.2.1
+sounddevice==0.5.5
+torch==2.12.0
