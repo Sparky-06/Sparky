@@ -4,14 +4,12 @@ import os
 import json
 
 if os.path.exists("history.json"):
-    with open("history.json") as fp:
+    with open("memory/history.json") as fp:
         conversation_history = json.load(fp)
 else:
     conversation_history = []
 
 
-
-conversation_history = []
 
 def add_memory(user, assistant):
     conversation_history.append(
@@ -23,7 +21,7 @@ def add_memory(user, assistant):
     if len(conversation_history) > 10:
         conversation_history.pop(0)
 
-    with open("history.json", "w") as fp:
+    with open("memory/history.json", "w") as fp:
         json.dump(conversation_history, fp)
     
 

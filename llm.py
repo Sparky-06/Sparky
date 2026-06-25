@@ -2,6 +2,10 @@ import json
 import requests
 import asyncio
 
+from pydantic import BaseModel, ValidationError
+
+import loguru as logger
+
 from voice import speak
 
 from memory.history import add_memory, get_memory
@@ -11,13 +15,6 @@ from memory.context import get_context, update_context
 from actions import *
 
 
-context = ""
-with open("memory/context.json", "r") as fp:
-    context = json.load(fp)
-
-history_text = ""
-with open("memory/history.json", "r") as fp:
-    history = json.load(fp)
 
 
 # =========================
@@ -401,6 +398,9 @@ def get_actions(user_request: str):
 
     context = get_context()
 
+    with open("memory/profile.json", "r") as fp:
+        profile_data = fp.read()
+
 
     prompt = f"""
 {SYSTEM_PROMPT}
@@ -410,6 +410,9 @@ Conversation History:
 
 context:
 {json.dumps(context, indent=2)}
+
+User profile data :
+{profile_data}
 
 User Request:
 {user_request}
@@ -431,111 +434,100 @@ User Request:
     print("\nLLM RAW:")
     print(raw)
 
+    class ModelResponse(BaseModel):
+      intent : str
+      confidence: float
+      actions : list[dict[str, str]]
+      response : str
+      memory_updates : dict[str,str]
+
     try:
-        data =  json.loads(raw)
+      data =  json.loads(raw)
+      result = ModelResponse(**data)
+      data = result.model_dump()
 
-    except json.JSONDecodeError:
-
-        print("Invalid JSON returned by model")
-
+      if(data["confidence"] < 0.80):
+        print("Not enough confidence in output")
         data = {
-            "actions": [],
-            "response": "Sorry, I couldn't understand that."
+        "actions": [],
+        "response": "Sorry, I couldn't understand that."
         }
-    return data
+      print("\nLLM result validated\n")
 
+    except (json.JSONDecodeError, ValidationError):
+
+      print("Invalid JSON returned by model")
+
+      data = {
+        "actions": [],
+        "response": "Sorry, I couldn't understand that."
+      }
+    
+    print("\nDATA :\n", data)
+    return data
 
 # =========================
 # EXECUTOR
 # =========================
 
-def execute_actions(data):
+def open_app_tool(action):
+    app = action["app"].lower()
 
+    if app in APPS:
+        APPS[app]()
+    else:
+        print(f"Unknown app: {app}")
+
+
+def open_website_tool(action):
+    site = action["website"].lower()
+
+    if site in WEBSITES:
+        WEBSITES[site]()
+    else:
+        print(f"Unknown website: {site}")
+
+
+TOOLS = {
+    "open_app": open_app_tool,
+    "open_website": open_website_tool,
+    "search_google": lambda a: search_google(a["query"]),
+    "search_youtube": lambda a: search_youtube(a["query"]),
+    "volume_up": lambda a: volume_up(),
+    "volume_down": lambda a: volume_down(),
+    "mute_volume": lambda a: mute_volume(),
+    "brightness_up": lambda a: brightness_up(),
+    "brightness_down": lambda a: brightness_down(),
+    "wifi_on": lambda a: wifi_on(),
+    "wifi_off": lambda a: wifi_off(),
+    "wifi_toggle": lambda a: wifi_toggle(),
+    "bluetooth_toggle": lambda a: bluetooth_toggle(),
+    "lock_screen": lambda a: lock_screen(),
+    "battery_status": lambda a: battery_status(),
+    "play_pause": lambda a: play_pause(),
+    "next_track": lambda a: next_track(),
+    "previous_track": lambda a: previous_track(),
+    "cricket_score": lambda a: cricket_score(),
+}
+
+
+def execute_actions(data):
     update_context(data.get("memory_updates", {}))
 
-    for action in data["actions"]:
-
-        tool = action["tool"]
+    for action in data.get("actions", []):
+        tool = action.get("tool")
 
         try:
-
-            if tool == "open_app":
-                app = action["app"].lower()
-
-                if app in APPS:
-                    APPS[app]()
-                else:
-                    print(f"Unknown app: {app}")
-
-            elif tool == "open_website":
-                site = action["website"].lower()
-
-                if site in WEBSITES:
-                    WEBSITES[site]()
-                else:
-                    print(f"Unknown website: {site}")
-
-            elif tool == "search_google":
-                search_google(action["query"])
-
-            elif tool == "search_youtube":
-                search_youtube(action["query"])
-
-            elif tool == "volume_up":
-                volume_up()
-
-            elif tool == "volume_down":
-                volume_down()
-
-            elif tool == "mute_volume":
-                mute_volume()
-
-            elif tool == "brightness_up":
-                brightness_up()
-
-            elif tool == "brightness_down":
-                brightness_down()
-
-            elif tool == "wifi_on":
-                wifi_on()
-
-            elif tool == "wifi_off":
-                wifi_off()
-
-            elif tool == "wifi_toggle":
-                wifi_toggle()
-
-            elif tool == "bluetooth_toggle":
-                bluetooth_toggle()
-
-            elif tool == "lock_screen":
-                lock_screen()
-
-            elif tool == "battery_status":
-                battery_status()
-
-            elif tool == "play_pause":
-                play_pause()
-
-            elif tool == "next_track":
-                next_track()
-
-            elif tool == "previous_track":
-                previous_track()
-
-            elif tool == "cricket_score":
-                cricket_score()
-
+            if tool in TOOLS:
+                TOOLS[tool](action)
             else:
-                print("Unknown tool:", tool)
-            
+                print(f"Unknown tool: {tool}")
 
         except Exception as e:
-            print("Execution error:", e)
+            print(f"Execution error in '{tool}': {e}")
 
     asyncio.run(speak(data["response"]))
     logger.info(f"LLM OUTPUT : {data['response']}")
-
 
 # =========================
 # MAIN

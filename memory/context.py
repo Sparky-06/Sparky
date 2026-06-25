@@ -39,5 +39,5 @@ def update_context(data):
         if key in context:
             context[key] = value
     
-    with open("context.json", "w") as fp:
+    with open("memory/context.json", "w") as fp:
         json.dump(context, fp)

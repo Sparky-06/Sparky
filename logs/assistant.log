@@ -240,3 +240,88 @@
 2026-05-23 03:31:33 | WARNING  | __main__:main:148 - exit : USER EXIT SPARKY - Sessions ends!!
 
 
+2026-06-24 17:14:11 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-06-24 17:17:27 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-06-24 17:17:32 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9998817443847656
+2026-06-24 17:17:41 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:17:42 | INFO     | __main__:main:145 - Transcript : Input Transcript - "open-spotify."
+2026-06-24 17:17:42 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-24 17:17:56 | INFO     | actions:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-06-24 17:18:00 | INFO     | llm:execute_actions:508 - LLM OUTPUT : Opening Spotify.
+2026-06-24 17:18:02 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9752665758132935
+2026-06-24 17:18:11 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:18:11 | INFO     | __main__:main:145 - Transcript : Input Transcript - "thanks."
+2026-06-24 17:18:11 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-24 17:18:21 | INFO     | llm:execute_actions:508 - LLM OUTPUT : Sorry, I'm happy to help.
+2026-06-24 17:18:24 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9941136837005615
+2026-06-24 17:18:32 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:18:33 | INFO     | __main__:main:145 - Transcript : Input Transcript - "exit  exit"
+2026-06-24 17:18:33 | WARNING  | __main__:main:148 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-06-24 17:30:30 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-06-24 17:30:32 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.996536910533905
+2026-06-24 17:30:40 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:30:41 | INFO     | __main__:main:145 - Transcript : Input Transcript - "opens part of us."
+2026-06-24 17:30:41 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-24 17:30:56 | INFO     | llm:execute_actions:508 - LLM OUTPUT : Opening Part of Us.
+2026-06-24 17:30:59 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9140936732292175
+2026-06-24 17:31:07 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:31:08 | INFO     | __main__:main:145 - Transcript : Input Transcript - "open-spotify"
+2026-06-24 17:31:08 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-24 17:31:15 | INFO     | actions:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-06-24 17:31:18 | INFO     | llm:execute_actions:508 - LLM OUTPUT : Opening Spotify.
+2026-06-24 17:31:21 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.829217791557312
+2026-06-24 17:31:29 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:31:30 | INFO     | __main__:main:145 - Transcript : Input Transcript - "exit"
+2026-06-24 17:31:30 | WARNING  | __main__:main:148 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-06-24 17:37:56 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-06-24 17:37:58 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9789149761199951
+2026-06-24 17:38:07 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:38:07 | INFO     | __main__:main:145 - Transcript : Input Transcript - "opens whatever"
+2026-06-24 17:38:07 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-24 17:38:22 | INFO     | llm:execute_actions:502 - LLM OUTPUT : Opening WhatsApp.
+2026-06-24 17:38:24 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8017927408218384
+2026-06-24 17:38:32 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:38:33 | INFO     | __main__:main:145 - Transcript : Input Transcript - "open-spotify."
+2026-06-24 17:38:33 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-24 17:38:41 | INFO     | actions:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-06-24 17:38:44 | INFO     | llm:execute_actions:502 - LLM OUTPUT : Opening Spotify.
+2026-06-24 17:38:46 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9573194980621338
+2026-06-24 17:38:55 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:38:56 | INFO     | __main__:main:145 - Transcript : Input Transcript - "open kit again"
+2026-06-24 17:38:56 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-24 17:39:06 | INFO     | llm:execute_actions:502 - LLM OUTPUT : Opening Kit.
+2026-06-24 17:39:13 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9067157506942749
+2026-06-24 17:39:22 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:39:22 | INFO     | __main__:main:145 - Transcript : Input Transcript - "open the last application."
+2026-06-24 17:39:22 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-24 17:39:29 | INFO     | actions:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-06-24 17:39:33 | INFO     | llm:execute_actions:502 - LLM OUTPUT : Opening Spotify.
+2026-06-24 17:39:46 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9912914633750916
+2026-06-24 17:39:55 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-24 17:39:55 | INFO     | __main__:main:145 - Transcript : Input Transcript - "exit"
+2026-06-24 17:39:55 | WARNING  | __main__:main:148 - exit : USER EXIT SPARKY - Sessions ends!!
+
+2026-06-26 01:13:30 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-06-26 01:14:04 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8976644277572632
+2026-06-26 01:14:12 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-26 01:14:13 | INFO     | __main__:main:145 - Transcript : Input Transcript - "open-spotifying."
+2026-06-26 01:14:13 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-26 01:18:35 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-06-26 01:18:47 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.88606858253479
+2026-06-26 01:18:56 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-26 01:18:56 | INFO     | __main__:main:145 - Transcript : Input Transcript - "open-spotify."
+2026-06-26 01:18:56 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-26 01:22:14 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-06-26 01:22:22 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.9710039496421814
+2026-06-26 01:22:31 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-26 01:22:31 | INFO     | __main__:main:145 - Transcript : Input Transcript - "open spotify for me."
+2026-06-26 01:22:31 | INFO     | __main__:main:155 - LLM : Goes into LLM for intent and action
+2026-06-26 01:22:40 | INFO     | actions:safe_popen:15 - Success : "['flatpak', 'run', 'com.spotify.Client']"successful command execution
+2026-06-26 01:22:43 | INFO     | llm:execute_actions:530 - LLM OUTPUT : Opening Spotify.
+2026-06-26 01:25:09 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8515580892562866
+2026-06-26 01:25:18 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-06-26 01:25:18 | INFO     | __main__:main:145 - Transcript : Input Transcript - "quit."
+2026-06-26 01:25:18 | WARNING  | __main__:main:148 - exit : USER EXIT SPARKY - Sessions ends!!
+

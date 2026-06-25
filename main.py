@@ -146,6 +146,8 @@ def main():
 
         if "exit" in text or "quit" in text or "stop" in text or "bye" in text:
             logger.warning("exit : USER EXIT SPARKY - Sessions ends!!\n")
+            if os.path.exists("voice.wav"):
+                os.remove("voice.wav")
             print("Thanks for using, goodbye!!")
             asyncio.run(speak("Goodbye!"))
             break
