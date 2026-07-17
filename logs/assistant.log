@@ -325,3 +325,9 @@
 2026-06-26 01:25:18 | INFO     | __main__:main:145 - Transcript : Input Transcript - "quit."
 2026-06-26 01:25:18 | WARNING  | __main__:main:148 - exit : USER EXIT SPARKY - Sessions ends!!
 
+2026-07-02 00:47:54 | WARNING  | __main__:main:128 - Acess : USER ACCESSES SPARKY - Session starts!!
+2026-07-02 00:48:03 | INFO     | wake:wake_word_listener:34 - Wake word detected! Score: 0.8339551091194153
+2026-07-02 00:48:12 | INFO     | __main__:listen:93 - listen : Speech captured successfully
+2026-07-02 00:48:13 | INFO     | __main__:main:145 - Transcript : Input Transcript - "open-spot-a-feel.  open-spot-a-feel."
+2026-07-02 00:48:13 | INFO     | __main__:main:157 - LLM : Goes into LLM for intent and action
+2026-07-02 00:48:27 | INFO     | llm:execute_actions:530 - LLM OUTPUT : Sorry, I couldn't understand that.
